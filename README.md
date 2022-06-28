@@ -7,7 +7,7 @@
 - 스프링에서는 Eureka를 통해 관리한다. NETFLIX가 만든 스프링의 기능 
 
 ### Eureka
-WS와 같은 Cloud 시스템에서 서비스의 로드 밸런싱과 실패처리 등을 유연하게 가져가 위해 각 서비스들의 IP / Port / InstanceId를 가지고 있는 REST 기반의 미들웨어 서버
+AWS와 같은 Cloud 시스템에서 서비스의 로드 밸런싱과 실패처리 등을 유연하게 가져가 위해 각 서비스들의 IP / Port / InstanceId를 가지고 있는 REST 기반의 미들웨어 서버
 
 
 ## TDD 로 서비스 기반의 아키텍처의 핵심 원칙 
