@@ -1,10 +1,10 @@
 server:
-port : 7000
+  port : 7000
 spring:
   application:
     name: config-server
-cloud:
-  config:
-    server:
-      git:
-        url: file:///C:/Users/klove/Documents/config/configrepo
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\Users\klove\Documents\posco-msa\configrepo
