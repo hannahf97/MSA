@@ -1,0 +1,48 @@
+server:
+  port: 8000
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: discovery_client1
+          uri: lb://DISCOVERY-CLIENT1
+          predicates:
+            - Path= /client1/**
+          filters:
+            - CustomFilter
+        - id: discovery_client2
+          uri: lb://DISCOVERY-CLIENT2
+          predicates:
+            - Path= /client2/**
+          filters:
+            - CustomFilter
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path= /user/**
+          filters:
+            - CustomFilter
+      default-filters:
+        - name : GlobalFilter
+          args :
+            baseMessage: hello-word
+            preLogger: false
+            postLogger: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace
