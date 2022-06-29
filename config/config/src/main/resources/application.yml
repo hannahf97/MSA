@@ -7,4 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: C:\Users\klove\Documents\posco-msa\configrepo
+          uri: https://github.com/hannahf97/configrepo.git
