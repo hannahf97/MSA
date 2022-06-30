@@ -1,6 +1,3 @@
-jwt:
-  time: 828434d28
-  secret: hello-world21241223
 posco:
   name: 332245기
   count: 20212323
@@ -15,3 +12,7 @@ spring:
     characterEncoding: UTF-8
     username: root
     password: "{cipher}aef47b74a38f0bc9fb504cf7928b813b529bbd3bbd5ade4fc1711f8a7b1a5938"
+
+jwt:
+  secret_key: 123jh124kjlfkjafdasdfasdflkjkldkajsdkjdfjhasdjflksjdflkjsdlfakjskjklfdjkajdkajdskfjkf
+  expTime: 86400000
