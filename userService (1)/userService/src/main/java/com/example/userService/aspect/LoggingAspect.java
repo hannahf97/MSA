@@ -22,7 +22,7 @@ public class LoggingAspect {
 //        log.info("----- After --------");
 //    }
 
-    @Around("execution(* com.posco.insta.user.service.*.*(..))")
+    @Around("execution(* com.example.userService.user.service.*.*(..))")
     public Object loggerAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
         long beforeTimeMillis = System.currentTimeMillis();
         log.info("start: "+ beforeTimeMillis);
