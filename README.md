@@ -45,4 +45,5 @@ AWS와 같은 Cloud 시스템에서 서비스의 로드 밸런싱과 실패처�
 ### Spring Cloud Gateway 
 ![image](https://user-images.githubusercontent.com/46432606/176425913-8067dcc8-de4f-4f92-adff-cebc9017f4a2.png)
 
+* lb : loadbalancer의 줄임말 
 * 주의 : url아님 uri 임
